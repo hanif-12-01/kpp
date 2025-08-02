@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rencana Eksekusi Proyek Final 2025</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+  <style>
+    :root {
+      --blue: #0A2463;
+      --blue-light: #3E92CC;
+      --cyan: #00D9FF;
+      --bg: #020817;
+      --text: #E0E6FF;
+      --card-bg: #0A1A2F;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      line-height: 1.7;
+      padding: 40px 20px;
+    }
+
+    h1, h2, h3 {
+      color: var(--cyan);
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: 2.6rem;
+      text-align: center;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px var(--blue-light), 0 0 20px var(--blue-light); }
+      to { text-shadow: 0 0 20px var(--cyan), 0 0 30px var(--cyan); }
+    }
+
+    .project {
+      background: var(--card-bg);
+      border-left: 5px solid var(--blue-light);
+      border-radius: 12px;
+      padding: 30px;
+      margin-bottom: 50px;
+      box-shadow: 0 4px 20px rgba(0, 217, 255, 0.05);
+    }
+
+    .project h2 {
+      font-size: 1.9rem;
+      margin-bottom: 10px;
+    }
+
+    .project h3 {
+      font-size: 1.4rem;
+      margin-top: 25px;
+    }
+
+    ul {
+      margin-left: 20px;
+      margin-bottom: 15px;
+    }
+
+    .timeline {
+      margin-top: 20px;
+      padding-left: 20px;
+      border-left: 2px solid var(--blue-light);
+    }
+
+    .timeline li {
+      margin-bottom: 15px;
+    }
+
+    .timeline strong {
+      color: var(--cyan);
+    }
+
+    .output {
+      background: var(--blue-light);
+      color: #fff;
+      padding: 12px 18px;
+      border-radius: 10px;
+      margin-top: 15px;
+      font-weight: 600;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 60px;
+    }
+
+    .cta {
+      padding: 15px 30px;
+      background: var(--blue-light);
+      color: #fff;
+      border: none;
+      border-radius: 30px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .cta:hover {
+      background: var(--cyan);
+      color: #000;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.1rem;
+      }
+      .project {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Rencana Eksekusi Proyek Final 2025</h1>
+
+  <!-- BENAHI.ID -->
+  <section class="project">
+    <h2>Opsi 1: Proyek "Benahi.ID"</h2>
+    <h3>Tahap Perencanaan (Bulan 1)</h3>
+    <ul>
+      <li><strong>Pembentukan Tim:</strong> Tech Lead, UI/UX Designer, Komunikasi & Kemitraan.</li>
+      <li><strong>Validasi Ganda:</strong> Wawancara dengan warga dan tukang servis.</li>
+      <li><strong>Fokus MVP:</strong> Elektronik kecil dan pakaian.</li>
+      <li><strong>Desain & Arsitektur:</strong> Mockup di Figma, desain database awal.</li>
+    </ul>
+
+    <h3>Roadmap & Tahap Eksekusi (4 Bulan)</h3>
+    <ul class="timeline">
+      <li><strong>Bulan 1:</strong> Fondasi – Registrasi pengguna, profil Jagoan Benahi.</li>
+      <li><strong>Bulan 2:</strong> Fitur Inti – Posting Kasus Benahi, direktori Jagoan.</li>
+      <li><strong>Bulan 3:</strong> Interaksi – Chat, rating, onboarding 5–10 Jagoan.</li>
+      <li><strong>Bulan 4:</strong> Poles – Bug fixing, UI polishing, materi kompetisi.</li>
+    </ul>
+
+    <div class="output">
+      Output: Prototipe fungsional, 5 Jagoan terverifikasi, 50 pengguna, 10 kasus selesai.
+    </div>
+  </section>
+
+  <!-- AKADEMI DIGITAL WARGA -->
+  <section class="project">
+    <h2>Opsi 2: Proyek "Akademi Digital Warga"</h2>
+    <h3>Tahap Perencanaan (Bulan 1)</h3>
+    <ul>
+      <li><strong>Pembentukan Tim:</strong> Project Lead, Desain Konten, Manajer Komunitas.</li>
+      <li><strong>Pilih Lokasi:</strong> Satu RW sebagai lokasi pilot.</li>
+      <li><strong>Jalin Kemitraan:</strong> RW, Karang Taruna, PKK.</li>
+      <li><strong>Kurikulum:</strong> 4 modul visual, kuesioner Google Forms.</li>
+    </ul>
+
+    <h3>Roadmap & Tahap Eksekusi</h3>
+    <ul class="timeline">
+      <li><strong>Bulan 1:</strong> Persiapan – Finalisasi modul, rekrut 10–15 Agen Digital.</li>
+      <li><strong>Bulan 2:</strong> Train-the-Trainer – Workshop intensif 1–2 hari.</li>
+      <li><strong>Bulan 3:</strong> Eksekusi – Agen Digital melaksanakan pelatihan.</li>
+      <li><strong>Bulan 4:</strong> Evaluasi – Analisis data, laporan dampak, video dokumenter.</li>
+    </ul>
+
+    <div class="output">
+      Output: Model pelatihan teruji, 15 Agen Digital, 50 warga terlatih, peningkatan pengetahuan 80%.
+    </div>
+  </section>
+
+  <!-- TETANGGA PINTAR -->
+  <section class="project">
+    <h2>Opsi 3: Proyek "Tetangga Pintar"</h2>
+    <h3>Tahap Perencanaan (Bulan 1)</h3>
+    <ul>
+      <li><strong>Pembentukan Tim:</strong> Tech Lead, UI/UX Designer, Komunikasi & Kemitraan.</li>
+      <li><strong>Validasi:</strong> Wawancara dengan RT dan warga.</li>
+      <li><strong>Fokus MVP:</strong> Fitur "Gudang Bersama" – pinjam-meminjam barang.</li>
+    </ul>
+
+    <h3>Roadmap & Tahap Eksekusi</h3>
+    <ul class="timeline">
+      <li><strong>Bulan 1:</strong> Fondasi – Registrasi pengguna, validasi RT.</li>
+      <li><strong>Bulan 2:</strong> Fitur Inti – Daftar barang, pencarian, unggah barang.</li>
+      <li><strong>Bulan 3:</strong> Transaksi – Pinjam, chat, status barang.</li>
+      <li><strong>Bulan 4:</strong> Poles – Bug fixing, testimoni warga, materi kompetisi.</li>
+    </ul>
+
+    <div class="output">
+      Output: Prototipe Gudang Bersama, 20 pengguna aktif, 20 barang terdaftar, 10 transaksi.
+    </div>
+  </section>
+
+  <footer>
+    <button class="cta" onclick="window.scrollTo({top:0, behavior:'smooth'})">⬆ Kembali ke Atas</button>
+  </footer>
+
+  <script>
+    gsap.from("h1", {duration: 1.5, y: -50, opacity: 0});
+    gsap.from(".project", {duration: 1, y: 50, opacity: 0, stagger: 0.3});
+  </script>
+</body>
+</html>
