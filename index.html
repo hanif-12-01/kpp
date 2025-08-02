@@ -26,7 +26,7 @@
       color: var(--text);
       font-family: 'Inter', sans-serif;
       line-height: 1.7;
-      padding: 40px 20px;
+      padding: 20px;
     }
 
     h1, h2, h3 {
@@ -35,7 +35,7 @@
     }
 
     h1 {
-      font-size: 2.6rem;
+      font-size: 2.2rem;
       text-align: center;
       animation: glow 2s ease-in-out infinite alternate;
     }
@@ -49,19 +49,17 @@
       background: var(--card-bg);
       border-left: 5px solid var(--blue-light);
       border-radius: 12px;
-      padding: 30px;
-      margin-bottom: 50px;
+      padding: 20px;
+      margin-bottom: 40px;
       box-shadow: 0 4px 20px rgba(0, 217, 255, 0.05);
     }
 
-    .project h2 {
-      font-size: 1.9rem;
-      margin-bottom: 10px;
-    }
-
-    .project h3 {
-      font-size: 1.4rem;
-      margin-top: 25px;
+    .summary, .sdg {
+      background: rgba(0, 217, 255, 0.08);
+      border: 1px solid var(--cyan);
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 20px;
     }
 
     ul {
@@ -92,30 +90,6 @@
       font-weight: 600;
     }
 
-    .summary {
-      background: rgba(0, 217, 255, 0.08);
-      border: 1px solid var(--cyan);
-      padding: 15px;
-      border-radius: 10px;
-      margin-bottom: 20px;
-    }
-
-    .summary h3 {
-      margin-bottom: 8px;
-    }
-
-    .sdg {
-      background: rgba(0, 217, 255, 0.05);
-      border: 1px solid var(--blue-light);
-      padding: 15px;
-      border-radius: 10px;
-      margin-bottom: 20px;
-    }
-
-    .sdg h3 {
-      margin-bottom: 8px;
-    }
-
     footer {
       text-align: center;
       margin-top: 60px;
@@ -138,12 +112,27 @@
       transform: scale(1.05);
     }
 
+    /* Responsive */
     @media (max-width: 600px) {
       h1 {
-        font-size: 2.1rem;
+        font-size: 1.8rem;
       }
+
+      h2 {
+        font-size: 1.4rem;
+      }
+
       .project {
-        padding: 20px;
+        padding: 15px;
+      }
+
+      ul {
+        margin-left: 15px;
+      }
+
+      .cta {
+        width: 100%;
+        max-width: 300px;
       }
     }
   </style>
@@ -162,44 +151,25 @@
     </div>
 
     <h3>SDGs yang Didukung</h3>
-    <div class="sdg">
-      <strong>SDG 12 – Konsumsi dan Produksi Bertanggung Jawab</strong><br>
-      Mendorong ekonomi sirkular melalui perbaikan, penggunaan ulang, dan daur ulang.
-    </div>
-    <div class="sdg">
-      <strong>SDG 8 – Pekerjaan Layak & Ekonomi</strong><br>
-      Menghubungkan tukang servis dengan pelanggan, menciptakan lapangan kerja lokal.
-    </div>
-    <div class="sdg">
-      <strong>SDG 11 – Kota Berkelanjutan</strong><br>
-      Mengurangi sampah rumah tangga dan mendukung lingkungan perkotaan yang bersih.
-    </div>
+    <div class="sdg"><strong>SDG 12</strong> – Konsumsi dan Produksi Bertanggung Jawab</div>
+    <div class="sdg"><strong>SDG 8</strong> – Pekerjaan Layak & Ekonomi</div>
+    <div class="sdg"><strong>SDG 11</strong> – Kota Berkelanjutan</div>
 
     <h3>Kelebihan & Kekurangan</h3>
     <ul>
       <li><strong>Kelebihan:</strong> Narasi lingkungan kuat, dampak ekonomi langsung, portofolio teknis solid.</li>
-      <li><strong>Kekurangan:</strong> Tantangan adopsi dua sisi (warga & tukang), verifikasi kualitas, potensi konflik transaksi.</li>
+      <li><strong>Kekurangan:</strong> Tantangan adopsi dua sisi, verifikasi kualitas, potensi konflik.</li>
     </ul>
 
-    <h3>Tahap Perencanaan (Bulan 1)</h3>
-    <ul>
-      <li><strong>Pembentukan Tim:</strong> Tech Lead, UI/UX Designer, Komunikasi & Kemitraan.</li>
-      <li><strong>Validasi Ganda:</strong> Wawancara dengan warga dan tukang servis.</li>
-      <li><strong>Fokus MVP:</strong> Elektronik kecil dan pakaian.</li>
-      <li><strong>Desain & Arsitektur:</strong> Mockup di Figma, desain database awal.</li>
-    </ul>
-
-    <h3>Roadmap & Tahap Eksekusi (4 Bulan)</h3>
+    <h3>Roadmap 4 Bulan</h3>
     <ul class="timeline">
-      <li><strong>Bulan 1:</strong> Fondasi – Registrasi pengguna, profil Jagoan Benahi.</li>
-      <li><strong>Bulan 2:</strong> Fitur Inti – Posting Kasus Benahi, direktori Jagoan.</li>
-      <li><strong>Bulan 3:</strong> Interaksi – Chat, rating, onboarding 5–10 Jagoan.</li>
-      <li><strong>Bulan 4:</strong> Poles – Bug fixing, UI polishing, materi kompetisi.</li>
+      <li><strong>B1:</strong> Registrasi & profil Jagoan</li>
+      <li><strong>B2:</strong> Fitur Kasus & direktori</li>
+      <li><strong>B3:</strong> Chat, rating, onboarding</li>
+      <li><strong>B4:</strong> Polishing & demo</li>
     </ul>
 
-    <div class="output">
-      Output: Prototipe fungsional, 5 Jagoan terverifikasi, 50 pengguna, 10 kasus selesai.
-    </div>
+    <div class="output">Output: 5 Jagoan, 50 pengguna, 10 kasus selesai</div>
   </section>
 
   <!-- AKADEMI DIGITAL WARGA -->
@@ -208,48 +178,29 @@
 
     <div class="summary">
       <h3>📌 Inti Proyek</h3>
-      <p>Program sosial untuk melatih pemuda dan ibu-ibu di lingkungan agar menjadi "Agen Digital" yang kemudian mengajarkan tetangga cara pakai HP dengan aman dan produktif.</p>
+      <p>Program sosial untuk melatih pemuda dan ibu-ibu agar menjadi "Agen Digital" yang kemudian mengajarkan tetangga cara pakai HP dengan aman dan produktif.</p>
     </div>
 
     <h3>SDGs yang Didukung</h3>
-    <div class="sdg">
-      <strong>SDG 4 – Pendidikan Berkualitas</strong><br>
-      Memberikan pelatihan literasi digital kepada warga tanpa batasan usia.
-    </div>
-    <div class="sdg">
-      <strong>SDG 10 – Mengurangi Kesenjangan</strong><br>
-      Menutup kesenjangan digital di tingkat komunitas.
-    </div>
-    <div class="sdg">
-      <strong>SDG 5 – Kesetaraan Gender</strong><br>
-      Memberdayakan ibu-ibu PKK dan pemuda sebagai Agen Digital.
-    </div>
+    <div class="sdg"><strong>SDG 4</strong> – Pendidikan Berkualitas</div>
+    <div class="sdg"><strong>SDG 10</strong> – Mengurangi Kesenjangan</div>
+    <div class="sdg"><strong>SDG 5</strong> – Kesetaraan Gender</div>
 
     <h3>Kelebihan & Kekurangan</h3>
     <ul>
-      <li><strong>Kelebihan:</strong> Risiko eksekusi rendah, dampak mudah diukur, narasi pemberdayaan kuat.</li>
-      <li><strong>Kekurangan:</strong> Kurang menantang secara teknis, ketergantungan pada relawan, skalabilitas manual.</li>
+      <li><strong>Kelebihan:</strong> Risiko rendah, dampat terukur, narasi kuat.</li>
+      <li><strong>Kekurangan:</strong> Kurang teknis, ketergantungan relawan.</li>
     </ul>
 
-    <h3>Tahap Perencanaan (Bulan 1)</h3>
-    <ul>
-      <li><strong>Pembentukan Tim:</strong> Project Lead, Desain Konten, Manajer Komunitas.</li>
-      <li><strong>Pilih Lokasi:</strong> Satu RW sebagai lokasi pilot.</li>
-      <li><strong>Jalin Kemitraan:</strong> RW, Karang Taruna, PKK.</li>
-      <li><strong>Kurikulum:</strong> 4 modul visual, kuesioner Google Forms.</li>
-    </ul>
-
-    <h3>Roadmap & Tahap Eksekusi</h3>
+    <h3>Roadmap 4 Bulan</h3>
     <ul class="timeline">
-      <li><strong>Bulan 1:</strong> Persiapan – Finalisasi modul, rekrut 10–15 Agen Digital.</li>
-      <li><strong>Bulan 2:</strong> Train-the-Trainer – Workshop intensif 1–2 hari.</li>
-      <li><strong>Bulan 3:</strong> Eksekusi – Agen Digital melaksanakan pelatihan.</li>
-      <li><strong>Bulan 4:</strong> Evaluasi – Analisis data, laporan dampak, video dokumenter.</li>
+      <li><strong>B1:</strong> Rekrut Agen Digital</li>
+      <li><strong>B2:</strong> Train-the-Trainer</li>
+      <li><strong>B3:</strong> Pelatihan lapangan</li>
+      <li><strong>B4:</strong> Evaluasi & laporan</li>
     </ul>
 
-    <div class="output">
-      Output: Model pelatihan teruji, 15 Agen Digital, 50 warga terlatih, peningkatan pengetahuan 80%.
-    </div>
+    <div class="output">Output: 15 Agen, 50 warga, +80% pengetahuan</div>
   </section>
 
   <!-- TETANGGA PINTAR -->
@@ -258,52 +209,10 @@
 
     <div class="summary">
       <h3>📌 Inti Proyek</h3>
-      <p>Aplikasi untuk satu RT yang memungkinkan warga saling pinjam-meminjam barang seperti tangga, bor, atau kursi. Hemat uang, hemat tempat, dan eratkan silaturahmi.</p>
+      <p>Aplikasi untuk satu RT yang memungkinkan warga saling pinjam-meminjam barang seperti tangga atau bor. Hemat uang, eratkan silaturahmi.</p>
     </div>
 
     <h3>SDGs yang Didukung</h3>
-    <div class="sdg">
-      <strong>SDG 11 – Kota dan Permukiman Berkelanjutan</strong><br>
-      Menciptakan lingkungan RT yang efisien, tangguh, dan terhubung.
-    </div>
-    <div class="sdg">
-      <strong>SDG 12 – Konsumsi dan Produksi Bertanggung Jawab</strong><br>
-      Mengurangi konsumsi berlebihan melalui sistem pinjam-meminjam.
-    </div>
-    <div class="sdg">
-      <strong>SDG 1 - Tanpa Kemiskinan</strong><br>
-      Mengurangi beban ekonomi rumah tangga melalui penghematan dan sharing economy.
-    </div>
-
-    <h3>Kelebihan & Kekurangan</h3>
-    <ul>
-      <li><strong>Kelebihan:</strong> Relevan, mudah dipahami, potensi viral, membangun komunitas.</li>
-      <li><strong>Kekurangan:</strong> Tantangan adopsi awal, isu keamanan & privasi, potensi konflik.</li>
-    </ul>
-
-    <h3>Tahap Perencanaan (Bulan 1)</h3>
-    <ul>
-      <li><strong>Pembentukan Tim:</strong> Tech Lead, UI/UX Designer, Komunikasi & Kemitraan.</li>
-      <li><strong>Validasi:</strong> Wawancara dengan RT dan warga.</li>
-      <li><strong>Fokus MVP:</strong> Fitur "Gudang Bersama" – pinjam-meminjam barang.</li>
-    </ul>
-
-    <h3>Roadmap & Tahap Eksekusi</h3>
-    <ul class="timeline">
-      <li><strong>Bulan 1:</strong> Fondasi – Registrasi pengguna, validasi RT.</li>
-      <li><strong>Bulan 2:</strong> Fitur Inti – Daftar barang, pencarian, unggah barang.</li>
-      <li><strong>Bulan 3:</strong> Transaksi – Pinjam, chat, status barang.</li>
-      <li><strong>Bulan 4:</strong> Poles – Bug fixing, testimoni warga, materi kompetisi.</li>
-    </ul>
-
-    <div class="output">
-      Output: Prototipe Gudang Bersama, 20 pengguna aktif, 20 barang terdaftar, 10 transaksi.
-    </div>
-  </section>
-
-  <footer>
-    <button class="cta" onclick="window.scrollTo({top:0, behavior:'smooth'})">⬆ Kembali ke Atas</button>
-  </footer>
-
-</body>
-</html>
+    <div class="sdg"><strong>SDG 11</strong> – Kota & Permukiman</div>
+    <div class="sdg"><strong>SDG 12</strong> – Konsumsi & Produksi</div>
+    <div class="sdg"><strong>SDG 1</strong>
