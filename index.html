@@ -3,216 +3,71 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Rencana Eksekusi Proyek Final 2025</title>
+  <title>Pilih Proyek Inovasi 2025</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --blue: #0A2463;
-      --blue-light: #3E92CC;
-      --cyan: #00D9FF;
-      --bg: #020817;
-      --text: #E0E6FF;
-      --card-bg: #0A1A2F;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: 'Inter', sans-serif;
-      line-height: 1.7;
-      padding: 20px;
-    }
-
-    h1, h2, h3 {
-      color: var(--cyan);
-      margin-bottom: 1rem;
-    }
-
-    h1 {
-      font-size: 2.2rem;
-      text-align: center;
-      animation: glow 2s ease-in-out infinite alternate;
-    }
-
-    @keyframes glow {
-      from { text-shadow: 0 0 10px var(--blue-light), 0 0 20px var(--blue-light); }
-      to { text-shadow: 0 0 20px var(--cyan), 0 0 30px var(--cyan); }
-    }
-
-    .project {
-      background: var(--card-bg);
-      border-left: 5px solid var(--blue-light);
-      border-radius: 12px;
-      padding: 20px;
-      margin-bottom: 40px;
-      box-shadow: 0 4px 20px rgba(0, 217, 255, 0.05);
-    }
-
-    .summary, .sdg {
-      background: rgba(0, 217, 255, 0.08);
-      border: 1px solid var(--cyan);
-      padding: 15px;
-      border-radius: 10px;
-      margin-bottom: 20px;
-    }
-
-    ul {
-      margin-left: 20px;
-      margin-bottom: 15px;
-    }
-
-    .timeline {
-      margin-top: 20px;
-      padding-left: 20px;
-      border-left: 2px solid var(--blue-light);
-    }
-
-    .timeline li {
-      margin-bottom: 15px;
-    }
-
-    .timeline strong {
-      color: var(--cyan);
-    }
-
-    .output {
-      background: var(--blue-light);
-      color: #fff;
-      padding: 12px 18px;
-      border-radius: 10px;
-      margin-top: 15px;
-      font-weight: 600;
-    }
-
-    footer {
-      text-align: center;
-      margin-top: 60px;
-    }
-
-    .cta {
-      padding: 15px 30px;
-      background: var(--blue-light);
-      color: #fff;
-      border: none;
-      border-radius: 30px;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    .cta:hover {
-      background: var(--cyan);
-      color: #000;
-      transform: scale(1.05);
-    }
-
-    /* Responsive */
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 1.8rem;
-      }
-
-      h2 {
-        font-size: 1.4rem;
-      }
-
-      .project {
-        padding: 15px;
-      }
-
-      ul {
-        margin-left: 15px;
-      }
-
-      .cta {
-        width: 100%;
-        max-width: 300px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>Rencana Eksekusi Proyek Final 2025</h1>
+  <header>
+    <h1>Pilih Proyek Inovasi 2025</h1>
+    <p>Tiga ide proyek untuk dampak sosial. Pilih mana yang menurutmu paling menjanjikan!</p>
+  </header>
 
-  <!-- BENAHI.ID -->
-  <section class="project">
-    <h2>Opsi 1: Proyek "Benahi.ID"</h2>
+  <main class="project-container">
+    <!-- OPSI 1: BENAHI.ID -->
+    <article class="project" id="project-1">
+      <h2>Opsi 1: Proyek "Benahi.ID"</h2>
+      <div class="summary">
+        <h3><span class="emoji">📌</span> Inti Proyek</h3>
+        <p>Platform digital yang mempertemukan orang dengan barang rusak dan tukang servis atau seniman daur ulang lokal agar barang tidak langsung dibuang, tapi diperbaiki atau diubah jadi berguna lagi.</p>
+      </div>
+      <h3>SDGs yang Didukung</h3>
+      <div class="sdg-list">
+        <span class="sdg"><strong>SDG 12</strong> – Konsumsi & Produksi Bertanggung Jawab</span>
+        <span class="sdg"><strong>SDG 8</strong> – Pekerjaan Layak & Ekonomi</span>
+        <span class="sdg"><strong>SDG 11</strong> – Kota Berkelanjutan</span>
+      </div>
+      <!-- Placeholder for future details -->
+    </article>
 
-    <div class="summary">
-      <h3>📌 Inti Proyek</h3>
-      <p>Platform digital yang mempertemukan orang dengan barang rusak dan tukang servis atau seniman daur ulang lokal agar barang tidak langsung dibuang, tapi diperbaiki atau diubah jadi berguna lagi.</p>
-    </div>
+    <!-- OPSI 2: AKADEMI DIGITAL WARGA -->
+    <article class="project" id="project-2">
+      <h2>Opsi 2: Proyek "Akademi Digital Warga"</h2>
+      <div class="summary">
+        <h3><span class="emoji">📌</span> Inti Proyek</h3>
+        <p>Program sosial untuk melatih pemuda dan ibu-ibu agar menjadi "Agen Digital" yang kemudian mengajarkan tetangga cara pakai HP dengan aman dan produktif.</p>
+      </div>
+      <h3>SDGs yang Didukung</h3>
+      <div class="sdg-list">
+        <span class="sdg"><strong>SDG 4</strong> – Pendidikan Berkualitas</span>
+        <span class="sdg"><strong>SDG 10</strong> – Mengurangi Kesenjangan</span>
+        <span class="sdg"><strong>SDG 5</strong> – Kesetaraan Gender</span>
+      </div>
+      <!-- Placeholder for future details -->
+    </article>
 
-    <h3>SDGs yang Didukung</h3>
-    <div class="sdg"><strong>SDG 12</strong> – Konsumsi dan Produksi Bertanggung Jawab</div>
-    <div class="sdg"><strong>SDG 8</strong> – Pekerjaan Layak & Ekonomi</div>
-    <div class="sdg"><strong>SDG 11</strong> – Kota Berkelanjutan</div>
+    <!-- OPSI 3: TETANGGA PINTAR -->
+    <article class="project" id="project-3">
+      <h2>Opsi 3: Proyek "Tetangga Pintar"</h2>
+      <div class="summary">
+        <h3><span class="emoji">📌</span> Inti Proyek</h3>
+        <p>Aplikasi untuk satu RT yang memungkinkan warga saling pinjam-meminjam barang seperti tangga atau bor. Hemat uang, eratkan silaturahmi.</p>
+      </div>
+      <h3>SDGs yang Didukung</h3>
+      <div class="sdg-list">
+        <span class="sdg"><strong>SDG 11</strong> – Kota & Permukiman</span>
+        <span class="sdg"><strong>SDG 12</strong> – Konsumsi & Produksi</span>
+        <span class="sdg"><strong>SDG 1</strong> – Tanpa Kemiskinan</span>
+      </div>
+      <!-- Placeholder for future details -->
+    </article>
+  </main>
 
-    <h3>Kelebihan & Kekurangan</h3>
-    <ul>
-      <li><strong>Kelebihan:</strong> Narasi lingkungan kuat, dampak ekonomi langsung, portofolio teknis solid.</li>
-      <li><strong>Kekurangan:</strong> Tantangan adopsi dua sisi, verifikasi kualitas, potensi konflik.</li>
-    </ul>
+  <footer>
+    <p>&copy; 2025 Proyek Inovasi. Semua hak dilindungi.</p>
+  </footer>
 
-    <h3>Roadmap 4 Bulan</h3>
-    <ul class="timeline">
-      <li><strong>B1:</strong> Registrasi & profil Jagoan</li>
-      <li><strong>B2:</strong> Fitur Kasus & direktori</li>
-      <li><strong>B3:</strong> Chat, rating, onboarding</li>
-      <li><strong>B4:</strong> Polishing & demo</li>
-    </ul>
-
-    <div class="output">Output: 5 Jagoan, 50 pengguna, 10 kasus selesai</div>
-  </section>
-
-  <!-- AKADEMI DIGITAL WARGA -->
-  <section class="project">
-    <h2>Opsi 2: Proyek "Akademi Digital Warga"</h2>
-
-    <div class="summary">
-      <h3>📌 Inti Proyek</h3>
-      <p>Program sosial untuk melatih pemuda dan ibu-ibu agar menjadi "Agen Digital" yang kemudian mengajarkan tetangga cara pakai HP dengan aman dan produktif.</p>
-    </div>
-
-    <h3>SDGs yang Didukung</h3>
-    <div class="sdg"><strong>SDG 4</strong> – Pendidikan Berkualitas</div>
-    <div class="sdg"><strong>SDG 10</strong> – Mengurangi Kesenjangan</div>
-    <div class="sdg"><strong>SDG 5</strong> – Kesetaraan Gender</div>
-
-    <h3>Kelebihan & Kekurangan</h3>
-    <ul>
-      <li><strong>Kelebihan:</strong> Risiko rendah, dampat terukur, narasi kuat.</li>
-      <li><strong>Kekurangan:</strong> Kurang teknis, ketergantungan relawan.</li>
-    </ul>
-
-    <h3>Roadmap 4 Bulan</h3>
-    <ul class="timeline">
-      <li><strong>B1:</strong> Rekrut Agen Digital</li>
-      <li><strong>B2:</strong> Train-the-Trainer</li>
-      <li><strong>B3:</strong> Pelatihan lapangan</li>
-      <li><strong>B4:</strong> Evaluasi & laporan</li>
-    </ul>
-
-    <div class="output">Output: 15 Agen, 50 warga, +80% pengetahuan</div>
-  </section>
-
-  <!-- TETANGGA PINTAR -->
-  <section class="project">
-    <h2>Opsi 3: Proyek "Tetangga Pintar"</h2>
-
-    <div class="summary">
-      <h3>📌 Inti Proyek</h3>
-      <p>Aplikasi untuk satu RT yang memungkinkan warga saling pinjam-meminjam barang seperti tangga atau bor. Hemat uang, eratkan silaturahmi.</p>
-    </div>
-
-    <h3>SDGs yang Didukung</h3>
-    <div class="sdg"><strong>SDG 11</strong> – Kota & Permukiman</div>
-    <div class="sdg"><strong>SDG 12</strong> – Konsumsi & Produksi</div>
-    <div class="sdg"><strong>SDG 1</strong>
+  <script src="script.js" defer></script>
+</body>
+</html>
